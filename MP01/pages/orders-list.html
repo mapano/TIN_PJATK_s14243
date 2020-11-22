@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME HR Demo</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>VR ROOM</h1>
+        <img src="../images/logo.jpg" alt="VR ROOM Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li><a href="vrrooms-list.html">Pokoje VR</a></li>
+            <li><a href="devices-list.html">Sprzęt</a></li>
+            <li><a href="orders-list.html">Sprzedane bilety</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Zamówienia VR</h2>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Klient</th>
+                    <th>Data zakupu</th>
+                    <th>Sprzedający</th>
+                    <th>Pokój VR</th>
+                    <th>Typ Biletu</th>
+                    <th>Akcje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janusz Nosacz</td>
+                    <td>01.01.2020</td>
+                    <td>Andrzej Andrzejczyk</td>
+                    <td>Pokój Walk</td>
+                    <td>Bilet Grupowy</td>
+                    <td>
+                        <ul class="list-actions">
+                            <li>
+                                <a class="list-actions-button-details" href="">Szczegóły</a>
+                            </li>
+                            <li>
+                                <a class="list-actions-button-edit" href="">Edytuj</a>
+                            </li>
+                            <li>
+                                <a class="list-actions-button-delete" href="">Usuń</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Marcin Nowak</td>
+                    <td>10.02.2020</td>
+                    <td>Andrzej Andrzejczyk</td>
+                    <td>Pokój Rollercoster</td>
+                    <td>Bilet Indywidualny</td>
+                    <td>
+                        <ul class="list-actions">
+                            <li>
+                                <a class="list-actions-button-details" href="">Szczegóły</a>
+                            </li>
+                            <li>
+                                <a class="list-actions-button-edit" href="">Edytuj</a>
+                            </li>
+                            <li>
+                                <a class="list-actions-button-delete" href="">Usuń</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="add-orders-buttons">
+            <a class="button-add" href="groupTicket-form.html">Dodaj bilet grupowy</a>
+            <a class="button-add" href="individualTicket-form.html">Dodaj bilet indywidualny</a>
+            <a class="button-add" href="timeTicket-form.html">Dodaj bilet czasowy</a>
+        </div>
+    </main>
+    <footer>
+        Mateusz, Panoszewski, s14243
+    </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME HR Demo</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>VR ROOM</h1>
+        <img src="../images/logo.jpg" alt="VR ROOM Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li><a href="vrrooms-list.html">Pokoje VR</a></li>
+            <li><a href="devices-list.html">Sprzęt</a></li>
+            <li><a href="orders-list.html">Sprzedane bilety</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Szczegóły pokoju VR</h2>
+        <form class="form">
+                <label for="roomName">Nazwa:<abbr title="required" aria-label="required">*</abbr></label>
+                <input type="text" name="roomName" id="roomName" value="Pokój Walk" disabled/>
+                <label for="roomSize">Rozmiar w m<sup>2</sup>:<abbr title="required" aria-label="required">*</abbr></label>
+                <input type="number" name="roomSize" id="roomSize"  value="12" disabled/>
+                <label for="isPremium">Czy to pokój premium?:<abbr title="required" aria-label="required">*</abbr></label>
+                <input type="checkbox" name="isPremium" id="isPremium" checked disabled/>
+            <div class="form-buttons">
+                <a href="vrroom-form.html" class="form-button-edit">Edytuj</a> 
+            </div>
+        </form>
+        <h2>Dostępny sprzęt</h2>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>SN</th>
+                    <th>Typ urzadzenia</th>
+                    <th>Data zakupu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AR456789999</td>
+                    <td>OCULUS</td>
+                    <td>12.12.2019</td>
+                </tr>
+                <tr>
+                    <td>NN765432876567</td>
+                    <td>HTC VIVE</td>
+                    <td>10.06.2019</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="form-buttons"><a href="vrrooms-list.html" class="form-button-back">Powrót</a></div>
+    </main>
+    <footer>
+        Mateusz, Panoszewski, s14243
+    </footer>
+</body>
+</html>

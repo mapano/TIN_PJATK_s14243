@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME HR Demo</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>VR ROOM</h1>
+        <img src="../images/logo.jpg" alt="VR ROOM Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li><a href="vrrooms-list.html">Pokoje VR</a></li>
+            <li><a href="devices-list.html">Sprzęt</a></li>
+            <li><a href="orders-list.html">Sprzedane bilety</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nowy Pokój VR</h2>
+        <form class="form">
+                <label for="roomName">Nazwa:<abbr title="required" aria-label="required">*</abbr></label>
+                <input type="text" name="roomName" id="roomName" />
+                <label for="roomSize">Rozmiar w m<sup>2</sup>:<abbr title="required" aria-label="required">*</abbr></label>
+                <input type="number" name="roomSize" id="roomSize" />
+                <label for="isPremium">Czy to pokój premium?:<abbr title="required" aria-label="required">*</abbr></label>
+                <input type="checkbox" name="isPremium" id="isPremium" />
+            <div class="form-buttons">
+                <input class="form-button-submit" type="submit" value="Dodaj" />
+                <a class="form-button-cancel" href="vrrooms-list.html">Anuluj</a>    
+            </div>  
+        </form>
+    </main>
+    <footer>
+        Mateusz, Panoszewski, s14243
+    </footer>
+</body>
+</html>
